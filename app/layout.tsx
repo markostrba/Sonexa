@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import { ClerkProvider } from "@clerk/nextjs";
-import ROUTES from "@/constants/routes";
-import { neobrutalism } from "@clerk/themes";
+import { ClerkWrapper } from "@/components/ClerkWrapper";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -30,16 +27,7 @@ export default function RootLayout({
           antialiased
         `}
       >
-        <ClerkProvider
-          appearance={{
-            variables: { colorPrimary: "#ec489d" },
-            baseTheme: neobrutalism,
-          }}
-          afterSignOutUrl={ROUTES.HOME}
-        >
-          <Navbar />
-          {children}
-        </ClerkProvider>
+        <ClerkWrapper>{children}</ClerkWrapper>
       </body>
     </html>
   );
