@@ -6,17 +6,6 @@
 
 :root {
   --primary: oklch(0.205 0 0);
-  --color-pink: #ec489d;
-  --color-pastel-blue: #bde7ff;
-  --color-pastel-purple: #e5d0ff;
-  --color-pastel-yellow: #fcffbd;
-  --color-pastel-orange-light: #ffecc8;
-  --color-pastel-pink: #ffc8e4;
-  --color-pastel-green: #c8ffdf;
-  --color-pastel-red-light: #ffcccc;
-  --color-pastel-cyan: #c8fffb;
-  --color-pastel-red-light: #ffcccc;
-  --color-pastel-orange: #ffda6e;
   --radius: 0.625rem;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -51,6 +40,17 @@
 }
 
 @theme inline {
+  --color-pink: #ec489d;
+  --color-pastel-blue: #bde7ff;
+  --color-pastel-purple: #e5d0ff;
+  --color-pastel-yellow: #fcffbd;
+  --color-pastel-orange-light: #ffecc8;
+  --color-pastel-pink: #ffc8e4;
+  --color-pastel-green: #c8ffdf;
+  --color-pastel-red-light: #ffcccc;
+  --color-pastel-cyan: #c8fffb;
+  --color-pastel-red-light: #ffcccc;
+  --color-pastel-orange: #ffda6e;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
