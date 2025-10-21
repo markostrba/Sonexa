@@ -1,3 +1,5 @@
+import ROUTES from "./routes";
+
 export const subjects = [
   "maths",
   "language",
@@ -71,3 +73,71 @@ export const recentSessions = [
     color: "#C8FFDF",
   },
 ];
+
+
+export const FAQ_QUESTIONS = [
+  {
+    question: "What is Sonexa?",
+    answer: "Sonexa is an AI-powered learning platform that offers personalized study companions designed to help students, educators, and professionals learn more effectively.",
+  },
+  {
+    question: "Which subjects do AI companions cover?",
+    answer: "Sonexa companions can assist with nearly any subject — including Math, Science, English, Physics, and more — across all education levels.",
+  },
+  {
+    question: "What subscription plans does Sonexa offer?",
+    answer: "We offer both monthly and annual subscription plans. Visit our Pricing section for details.",
+  },
+  {
+    question: "Can I cancel my subscription anytime?",
+    answer: "Yes! You can cancel your subscription anytime through your account settings with no cancellation fees.",
+  },
+  {
+    question: "Do you offer a free trial?",
+    answer: "Currently, we don't offer a free trial. However, you can start using Sonexa with our Free plan.",
+  },
+] as const;
+
+export const PRICING = [
+    {
+      name: "Basic",
+      priceMonthly: "Free",
+      priceAnnual: "Free",
+      description: "Perfect for exploring Sonexa’s AI learning experience.",
+      buttonName: "Get Started Free",
+      buttonRedirect: ROUTES.SIGN_UP,
+      perks: [
+        { name: "10 Conversations / month", available: true },
+        { name: "3 Active Companions", available: true },
+        { name: "AI Quizzes", available: true },
+      ],
+    },
+    {
+      name: "Core",
+      priceMonthly: "$12",
+      priceAnnual: "$10",
+      buttonName: "Upgrade to Core",
+      buttonRedirect: ROUTES.SIGN_UP,
+      perks: [
+        { name: "Everything in Free", available: true },
+        { name: "100 Conversations / month", available: true },
+        { name: "Up to 10 Active Companions", available: true },
+        { name: "AI Quizzes", available: true },
+        { name: "Session Recaps", available: true },
+      ],
+    },
+    {
+      name: "Pro",
+      priceMonthly: "$30",
+      priceAnnual: "$24",
+      buttonName: "Upgrade to Pro",
+      buttonRedirect: ROUTES.SIGN_UP,
+      perks: [
+        { name: "Everything in Core", available: true },
+        { name: "Unlimited Companions", available: true },
+        { name: "Unlimited Conversations", available: true },
+        { name: "Early Access to New Features", available: true },
+        { name: "Priority Support", available: true },
+      ],
+    },
+] as const;
