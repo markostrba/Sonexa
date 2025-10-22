@@ -5,6 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  --cta: #2c2c2c;
+  --cta-gold: #fccc41;
   --primary: oklch(0.205 0 0);
   --radius: 0.625rem;
   --card: oklch(1 0 0);
@@ -40,6 +42,8 @@
 }
 
 @theme inline {
+  --color-cta: var(--cta);
+  --color-cta-gold: var(--cta-gold);
   --color-pink: #ec489d;
   --color-pastel-blue: #bde7ff;
   --color-pastel-purple: #e5d0ff;
@@ -147,5 +151,23 @@ body {
   .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
+  }
+}
+
+.cl-avatarBox {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-color: #2c2c2c;
+  border-width: 1px;
+  border-radius: 4px;
+}
+
+.cl-internal-i087vc {
+  border-radius: 4px;
+}
+@media (width <= 30rem) {
+  .cl-avatarBox {
+    width: 1.75rem;
+    height: 1.75rem;
   }
 }

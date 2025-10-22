@@ -109,7 +109,6 @@ export const PRICING = [
       perks: [
         { name: "10 Conversations / month", available: true },
         { name: "3 Active Companions", available: true },
-        { name: "AI Quizzes", available: true },
       ],
     },
     {
@@ -122,8 +121,6 @@ export const PRICING = [
         { name: "Everything in Free", available: true },
         { name: "100 Conversations / month", available: true },
         { name: "Up to 10 Active Companions", available: true },
-        { name: "AI Quizzes", available: true },
-        { name: "Session Recaps", available: true },
       ],
     },
     {

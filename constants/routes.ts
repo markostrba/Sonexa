@@ -1,7 +1,8 @@
 const ROUTES = {
   HOME: "/",
-  COMPANIONS: "/companions",
-  MY_JOURNEY: "/my-journey",
+  DASHBOARD: "/dashboard",
+  COMPANIONS: "/dashboard/companions",
+  MY_JOURNEY: "/dashboard/my-journey",
   SIGN_IN: "/sign-in",
   SIGN_UP: "/sign-up",
   NEW_COMPANIONS: "/companions/new",
